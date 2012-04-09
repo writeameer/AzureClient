@@ -51,6 +51,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Models\AffinityGroup.cs" />
+    <Compile Include="ServiceManagementClientBase.cs" />
     <Compile Include="ServiceRequests\CreateAffinityGroupRequest.cs" />
     <Compile Include="ServiceRequests\CreateHostedServiceRequest.cs" />
     <Compile Include="ServiceManagementClient.cs" />
