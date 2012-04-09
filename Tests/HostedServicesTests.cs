@@ -1,16 +1,10 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Collections.Specialized;
 using System.Configuration;
 using System.IO;
-using System.Linq;
-using System.Net;
 using System.Security.Cryptography;
 using System.Security.Cryptography.X509Certificates;
-using System.Text;
-using System.Xml.Linq;
 using AzureClient;
-using AzureClient.Models;
 using AzureClient.ServiceRequests;
 using NUnit.Framework;
 
@@ -27,13 +21,9 @@ namespace Tests
         public HostedServicesTests()
         {
             // Setup stuff in constructor
-
-            //_mgmtCert = _appSettings["MgmtCert"]
-
             _subscriptionId = _appSettings["subscriptionid"];
             _mgmtCert = System.IO.File.ReadAllText(@"C:\progs\secret\azurecert.txt");
             _managementClient = new ServiceManagementClient(_mgmtCert, _subscriptionId);
-
         }
         [Test]
         public void GetServices()
@@ -41,21 +31,19 @@ namespace Tests
             var hostedServices = _managementClient.GetHostedServices();
 
             foreach (var hostedService in hostedServices)
-            {
                 Console.WriteLine(hostedService.ServiceName + " " + hostedService.Url);
-            }
         }
 
         [Test]
         public void ExportCertForFiddler()
         {
-            var cspParameters = new CspParameters {KeyContainerName = "KeyContainer"};
-            var rsa = new RSACryptoServiceProvider(cspParameters);
-
             var cert = new X509Certificate2(Convert.FromBase64String(_mgmtCert), "", X509KeyStorageFlags.Exportable);
-            
             var certData = cert.Export(X509ContentType.Cert);
-            File.WriteAllBytes(@"c:\users\ameer\documents\Fiddler2\ClientCertificate.cer", certData);
+            var userProfile = Environment.GetEnvironmentVariable("userprofile");
+            var fileName = String.Format(@"{0}\documents\Fiddler2\ClientCertificate.cer", userProfile);
+            Console.WriteLine(fileName);
+            
+            File.WriteAllBytes(fileName, certData);
         }
 
         [Test]
