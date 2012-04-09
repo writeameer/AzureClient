@@ -100,12 +100,14 @@ namespace Tests
         }
 
         [Test]
-        public void ListDeployments()
+        public void GetDeployment()
         {
-            var deployments = _managementClient.ListDeployments("cloudomanapi", "production");
-            foreach (var deployment in deployments)
+            var deployment = _managementClient.GetDeployment("cloudomanapi", "production");
+            Console.WriteLine(deployment.Name);
+
+            foreach(var roleInstance in deployment.RoleList)
             {
-                Console.WriteLine(deployment.Name);
+                Console.WriteLine(roleInstance.OsVersion + " " + roleInstance.RoleName);
             }
         }
     }

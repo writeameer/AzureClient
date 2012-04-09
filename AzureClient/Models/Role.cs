@@ -8,6 +8,6 @@ namespace AzureClient.Models
     public class Role
     {
         public string RoleName{ get; set; }
-        public string OsVerion { get; set; }
+        public string OsVersion { get; set; }
     }
 }

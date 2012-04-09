@@ -10,7 +10,30 @@ namespace AzureClient
 {
     partial class ServiceManagementClient
     {
+        public T Execute<T>(RestRequest request) where T : new()
+        {
+            // Create HTTP header with API version
+            var apiVersion = new RestSharp.Parameter
+            {
+                Name = "x-ms-version",
+                Value = "2011-10-01",
+                Type = ParameterType.HttpHeader
+            };
 
+            // Set base url for request and add auth headers
+            var client = new RestClient
+            {
+                BaseUrl = _baseUrl,
+                ClientCertificates = new X509CertificateCollection { _clientCert }
+            };
+
+            request.AddParameter(apiVersion);
+
+            // Make Request 
+            var response = client.Execute<T>(request);
+            Console.WriteLine(response.Content);
+            return response.Data;
+        }
         public List<T> ExecuteList<T>(RestRequest request) where T : new()
         {
             // Create HTTP header with API version
