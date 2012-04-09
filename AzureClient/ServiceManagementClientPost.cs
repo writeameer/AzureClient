@@ -14,45 +14,6 @@ namespace AzureClient
     public partial class ServiceManagementClient
     {
 
-
-        public string CreateHostedService(string serviceRequest)
-        {
-            // Create Web Request
-            var requestUri = _baseUrl + "services/hostedservices";
-            var request = (HttpWebRequest)WebRequest.Create(requestUri);
-            request.Headers["x-ms-version"] = "2011-10-01";
-            request.ContentType = "application/xml";
-            request.Method = "POST";
-
-            // Add client cert to request
-            request.ClientCertificates.Add(_clientCert);
-
-            //  Add content length to request
-            var postData = Encoding.UTF8.GetBytes(serviceRequest);
-            request.ContentLength = postData.Length;
-
-            // Add post data to request
-            var dataStream = request.GetRequestStream();
-            dataStream.Write(postData, 0, postData.Length);
-            dataStream.Close();
-
-            // Make request
-            WebResponse response=null;
-
-            try
-            {
-                response = (HttpWebResponse)request.GetResponse();
-            }            
-            catch (WebException webException)
-            {
-                response = (HttpWebResponse)webException.Response;
-            }
-
-            var responseText = GetResponse(response);
-            Console.WriteLine(responseText);
-            return GetResponse(response);
-        }
-
         public string ExecutePost(string resource, string xmlRequest)
         {
             // Create Web Request

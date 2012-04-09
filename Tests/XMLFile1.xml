@@ -1,9 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <CreateAffinityGroup  xmlns="http://schemas.microsoft.com/windowsazure">
-  <Name>MyAffinityGroup</Name>
-  <Label>VGVzdCBBZmZpbml0eSBHcm91cA==</Label>
-  <Description>This is a test</Description>
-  <Location>Anywhere Asia</Location>
+  <Name>affinity-group-name</Name>
+  <Label>YWZmaW5pdHktZ3JvdXAtbmFtZQ==</Label>
+  <Description></Description>
+  <Location>Anywhere US</Location>
 </CreateAffinityGroup>
 
 <Error xmlns="http://schemas.microsoft.com/windowsazure" xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
