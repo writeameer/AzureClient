@@ -70,5 +70,6 @@ namespace AzureClient
             var request = new RestRequest { Resource = resourceName };
             return Execute<HostedService>(request); 
         }
+
     }
 }

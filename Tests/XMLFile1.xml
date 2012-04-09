@@ -1,60 +1,14 @@
-﻿<HostedService xmlns="http://schemas.microsoft.com/windowsazure" xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
-  <Url>https://management.core.windows.net/3402db5e-f0ea-46ea-a151-bb2e3e99789b/services/hostedservices/cloudomanapi</Url>
-  <ServiceName>cloudomanapi</ServiceName>
-  <HostedServiceProperties>
-    <Description/>
-    <Location>Southeast Asia</Location>
-    <Label>YXBpLmNsb3Vkb21hbi5jb20=</Label>
-  </HostedServiceProperties>
-  <Deployments>
-    <Deployment>
-      <Name>7de2a3567b8f4c24bbe5cea0a9fa1764</Name>
-      <DeploymentSlot>Production</DeploymentSlot>
-      <PrivateID>98447317142d4b509d2e59f701b44e69</PrivateID>
-      <Status>Running</Status>
-      <Label>Q2xvdWRvbWFuLldlcEFwaS5BenVyZSAtIDQvMDEvMjAxMiAxMTowMjo0MyBQTQ==</Label>
-      <Url>http://cloudomanapi.cloudapp.net/</Url>
-      <Configuration>PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTE2Ij8+DQo8U2VydmljZUNvbmZpZ3VyYXRpb24geG1sbnM6eHNpPSJodHRwOi8vd3d3LnczLm9yZy8yMDAxL1hNTFNjaGVtYS1pbnN0YW5jZSIgeG1sbnM6eHNkPSJodHRwOi8vd3d3LnczLm9yZy8yMDAxL1hNTFNjaGVtYSIgc2VydmljZU5hbWU9IiIgb3NGYW1pbHk9IjIiIG9zVmVyc2lvbj0iKiIgeG1sbnM9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vU2VydmljZUhvc3RpbmcvMjAwOC8xMC9TZXJ2aWNlQ29uZmlndXJhdGlvbiI+DQogIDxSb2xlIG5hbWU9IkNsb3Vkb21hbi5XZXBBcGkiPg0KICAgIDxDb25maWd1cmF0aW9uU2V0dGluZ3M+DQogICAgICA8U2V0dGluZyBuYW1lPSJNaWNyb3NvZnQuV2luZG93c0F6dXJlLlBsdWdpbnMuRGlhZ25vc3RpY3MuQ29ubmVjdGlvblN0cmluZyIgdmFsdWU9IkRlZmF1bHRFbmRwb2ludHNQcm90b2NvbD1odHRwcztBY2NvdW50TmFtZT1hbWVlcmRlZW47QWNjb3VudEtleT1FUnVxdkt0OXp5ejBjOWlNb3REVUN3TnorL25ZUGRCdEZCWUFYTnV6WUhrY09uRTZSM053aXBvWUJ6bFlhWEEvbGRSK0Q4ck1sREdHeWtwS2pHZ1hjdz09IiAvPg0KICAgICAgPFNldHRpbmcgbmFtZT0iTWljcm9zb2Z0LldpbmRvd3NBenVyZS5QbHVnaW5zLlJlbW90ZUFjY2Vzcy5FbmFibGVkIiB2YWx1ZT0idHJ1ZSIgLz4NCiAgICAgIDxTZXR0aW5nIG5hbWU9Ik1pY3Jvc29mdC5XaW5kb3dzQXp1cmUuUGx1Z2lucy5SZW1vdGVBY2Nlc3MuQWNjb3VudFVzZXJuYW1lIiB2YWx1ZT0id3JpdGVhbWVlciIgLz4NCiAgICAgIDxTZXR0aW5nIG5hbWU9Ik1pY3Jvc29mdC5XaW5kb3dzQXp1cmUuUGx1Z2lucy5SZW1vdGVBY2Nlc3MuQWNjb3VudEVuY3J5cHRlZFBhc3N3b3JkIiB2YWx1ZT0iTUlJQm5RWUpLb1pJaHZjTkFRY0RvSUlCampDQ0FZb0NBUUF4Z2dGT01JSUJTZ0lCQURBeU1CNHhIREFhQmdOVkJBTU1FMWRwYm1SdmQzTWdRWHAxY21VZ1ZHOXZiSE1DRUdLcmZDNEhTNUs3Ui9Yb1phZkFuRHN3RFFZSktvWklodmNOQVFFQkJRQUVnZ0VBT2M1Qlg2b3l5V1FtdWVwNjZ5Q2kyS29XeHR1dzcyd1cvRk4ySGRvQjdhOUhLSHRwY1VHOVZjN0grVmN1RTZZbVczOEI0OVpBYUhFQkZ6NjdOUEJ3UEZEYWVBaGZGbGgzWmJ4SjBvZHd3cGFNKzcvMjExMkxLelJwdlhpMDBBN3Q2U0RIQ25LTTNXS0xuaDBrNFowdWVySkk3R0g2Q3U4K2lDbDhYM1p2U1R1R0dCTDNxaWtFNHBSOEFkaVdvWVlYaHN2K3JKQ1BmODcrbE04bGw0L0g2MHFQci9lMHZldkxjZGQ5a2hIa0lZNjNjcUZBWTNVMDNZdVpmL0pNaUdZYW1IQXlmVFJ3SXRENytERnNLcWN6RHF4WE51MmhEc3Rzb1hiamk5T0JuYTFsNlFVSzI3aFZmRDdlT0tkQXUxUC9VeTN5YmlNV1A0RmROSkp3dlVYcStEQXpCZ2txaGtpRzl3MEJCd0V3RkFZSUtvWklodmNOQXdjRUNJMkl3TGlXbndsTGdCQzlNUUhIQjN0bzZLcGdsM3RlOFE2NiIgLz4NCiAgICAgIDxTZXR0aW5nIG5hbWU9Ik1pY3Jvc29mdC5XaW5kb3dzQXp1cmUuUGx1Z2lucy5SZW1vdGVBY2Nlc3MuQWNjb3VudEV4cGlyYXRpb24iIHZhbHVlPSIyMDEyLTEyLTMwVDIzOjU5OjU5LjAwMDAwMDArMTE6MDAiIC8+DQogICAgICA8U2V0dGluZyBuYW1lPSJNaWNyb3NvZnQuV2luZG93c0F6dXJlLlBsdWdpbnMuUmVtb3RlRm9yd2FyZGVyLkVuYWJsZWQiIHZhbHVlPSJ0cnVlIiAvPg0KICAgIDwvQ29uZmlndXJhdGlvblNldHRpbmdzPg0KICAgIDxJbnN0YW5jZXMgY291bnQ9IjEiIC8+DQogICAgPENlcnRpZmljYXRlcz4NCiAgICAgIDxDZXJ0aWZpY2F0ZSBuYW1lPSJNaWNyb3NvZnQuV2luZG93c0F6dXJlLlBsdWdpbnMuUmVtb3RlQWNjZXNzLlBhc3N3b3JkRW5jcnlwdGlvbiIgdGh1bWJwcmludD0iQTM0NDNBOTNCMEM2RjgyMzRGMzQyNzAzMUJDQUIwRTAzM0FCNTMxRCIgdGh1bWJwcmludEFsZ29yaXRobT0ic2hhMSIgLz4NCiAgICA8L0NlcnRpZmljYXRlcz4NCiAgPC9Sb2xlPg0KPC9TZXJ2aWNlQ29uZmlndXJhdGlvbj4=</Configuration>
-      <RoleInstanceList>
-        <RoleInstance>
-          <RoleName>Cloudoman.WepApi</RoleName>
-          <InstanceName>Cloudoman.WepApi_IN_0</InstanceName>
-          <InstanceStatus>ReadyRole</InstanceStatus>
-          <InstanceUpgradeDomain>0</InstanceUpgradeDomain>
-          <InstanceFaultDomain>0</InstanceFaultDomain>
-          <InstanceSize>Small</InstanceSize>
-          <InstanceStateDetails/>
-        </RoleInstance>
-      </RoleInstanceList>
-      <UpgradeDomainCount>1</UpgradeDomainCount>
-      <RoleList>
-        <Role>
-          <RoleName>Cloudoman.WepApi</RoleName>
-          <OsVersion>WA-GUEST-OS-2.9_201112-03</OsVersion>
-        </Role>
-      </RoleList>
-      <SdkVersion>#1.6.21103.1459</SdkVersion>
-      <InputEndpointList>
-        <InputEndpoint>
-          <RoleName>Cloudoman.WepApi</RoleName>
-          <Vip>111.221.82.6</Vip>
-          <Port>80</Port>
-        </InputEndpoint>
-        <InputEndpoint>
-          <RoleName>Cloudoman.WepApi</RoleName>
-          <Vip>111.221.82.6</Vip>
-          <Port>3389</Port>
-        </InputEndpoint>
-        <InputEndpoint>
-          <RoleName>Cloudoman.WepApi</RoleName>
-          <Vip>111.221.82.6</Vip>
-          <Port>8172</Port>
-        </InputEndpoint>
-      </InputEndpointList>
-      <Locked>false</Locked>
-      <RollbackAllowed>false</RollbackAllowed>
-    </Deployment>
-  </Deployments>
-</HostedService>
-cloudomanapi
-7de2a3567b8f4c24bbe5cea0a9fa1764
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CreateDeployment xmlns="http://schemas.microsoft.com/windowsazure">
+  <Name>DeploymentFromApi</Name>
+  <PackageUrl>https://ameerdeen.blob.core.windows.net/public/EmptyWorker.cspkg</PackageUrl>
+  <Label>RGVwbG95bWVudEZyb21BcGk=</Label>
+  <Configuration>DQogICAgICAgICAgICAgICAgPD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCiAgICAgICAgICAgICAgICA8U2VydmljZUNvbmZpZ3VyYXRpb24gc2VydmljZU5hbWU9IkVtcHR5V29ya2VyIiB4bWxucz0iaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS9TZXJ2aWNlSG9zdGluZy8yMDA4LzEwL1NlcnZpY2VDb25maWd1cmF0aW9uIiBvc0ZhbWlseT0iMiIgb3NWZXJzaW9uPSIqIj4NCiAgICAgICAgICAgICAgICAgIDxSb2xlIG5hbWU9IkVtcHR5V29ya2VyUm9sZSI+DQogICAgICAgICAgICAgICAgICAgIDxJbnN0YW5jZXMgY291bnQ9IjEiIC8+DQogICAgICAgICAgICAgICAgICAgIDxDb25maWd1cmF0aW9uU2V0dGluZ3M+DQogICAgICAgICAgICAgICAgICAgICAgPFNldHRpbmcgbmFtZT0iTWljcm9zb2Z0LldpbmRvd3NBenVyZS5QbHVnaW5zLkRpYWdub3N0aWNzLkNvbm5lY3Rpb25TdHJpbmciIHZhbHVlPSJVc2VEZXZlbG9wbWVudFN0b3JhZ2U9dHJ1ZSIgLz4NCiAgICAgICAgICAgICAgICAgICAgICA8U2V0dGluZyBuYW1lPSJNaWNyb3NvZnQuV2luZG93c0F6dXJlLlBsdWdpbnMuUmVtb3RlQWNjZXNzLkVuYWJsZWQiIHZhbHVlPSJ0cnVlIiAvPg0KICAgICAgICAgICAgICAgICAgICAgIDxTZXR0aW5nIG5hbWU9Ik1pY3Jvc29mdC5XaW5kb3dzQXp1cmUuUGx1Z2lucy5SZW1vdGVBY2Nlc3MuQWNjb3VudFVzZXJuYW1lIiB2YWx1ZT0iYWRtaW4iIC8+DQogICAgICAgICAgICAgICAgICAgICAgPFNldHRpbmcgbmFtZT0iTWljcm9zb2Z0LldpbmRvd3NBenVyZS5QbHVnaW5zLlJlbW90ZUFjY2Vzcy5BY2NvdW50RW5jcnlwdGVkUGFzc3dvcmQiIHZhbHVlPSJNSUlCblFZSktvWklodmNOQVFjRG9JSUJqakNDQVlvQ0FRQXhnZ0ZPTUlJQlNnSUJBREF5TUI0eEhEQWFCZ05WQkFNTUUxZHBibVJ2ZDNNZ1FYcDFjbVVnVkc5dmJITUNFSHFmbUJZb1Y0dXhTMmVJdWY2ZjF1SXdEUVlKS29aSWh2Y05BUUVCQlFBRWdnRUFONEhnZVdDVGdYOEorN1BkemFZRURjTjRhNW9jY3BYM3BoN1dzdXhIQW0wVG9zQWIyRHg3cll5K0tma3hCSmJLQXRqVDM5eEI1SWs1UENuZFpXTXc1V0RJQUdtaklVNXk3dzdvVnVsckgvakFnamxVeGt1dk5KV1ZWdDNrcTkyUEd2cjhCdWNoZXM4Y2E1bGhrc0lobG83VW5uZVE2Ti9MeGpFREp1cW9FK2x4eFdyRG5FRmlIQUJQZ21lSE10eTJkc3JYbWk0TjZjTk1EUlpaWCszODNZYkx6THVXT0ZEYXN2d0gva3o1SXhnWVFKRVFzQTV1ZG1MUFJTRHJXS0dxUi9sd0FHeTBYeUI0dnNWNzZSb0dpQUQ3dzAzOXBJSU9vR1cwUGliRG92QmM1NjdrVXNYSFlNdkU1bVJkRUcyenAwWE1wY1F3VWpzTTJIMGY3aHJHMGpBekJna3Foa2lHOXcwQkJ3RXdGQVlJS29aSWh2Y05Bd2NFQ0dpWk0xYkUwaHhUZ0JDNkdHa1daZTV4RGcyZHZCblBuR0QzIiAvPg0KICAgICAgICAgICAgICAgICAgICAgIDxTZXR0aW5nIG5hbWU9Ik1pY3Jvc29mdC5XaW5kb3dzQXp1cmUuUGx1Z2lucy5SZW1vdGVBY2Nlc3MuQWNjb3VudEV4cGlyYXRpb24iIHZhbHVlPSIyMDEzLTA0LTA5VDIzOjU5OjU5LjAwMDAwMDArMTA6MDAiIC8+DQogICAgICAgICAgICAgICAgICAgICAgPFNldHRpbmcgbmFtZT0iTWljcm9zb2Z0LldpbmRvd3NBenVyZS5QbHVnaW5zLlJlbW90ZUZvcndhcmRlci5FbmFibGVkIiB2YWx1ZT0idHJ1ZSIgLz4NCiAgICAgICAgICAgICAgICAgICAgPC9Db25maWd1cmF0aW9uU2V0dGluZ3M+DQogICAgICAgICAgICAgICAgICAgIDxDZXJ0aWZpY2F0ZXM+DQogICAgICAgICAgICAgICAgICAgICAgPENlcnRpZmljYXRlIG5hbWU9Ik1pY3Jvc29mdC5XaW5kb3dzQXp1cmUuUGx1Z2lucy5SZW1vdGVBY2Nlc3MuUGFzc3dvcmRFbmNyeXB0aW9uIiB0aHVtYnByaW50PSJCNTNFMkFERTVGMTYyNkIzM0E3OUNDMTBENTdBQzUxNTlCMkY2Mzc0IiB0aHVtYnByaW50QWxnb3JpdGhtPSJzaGExIiAvPg0KICAgICAgICAgICAgICAgICAgICA8L0NlcnRpZmljYXRlcz4NCiAgICAgICAgICAgICAgICAgIDwvUm9sZT4NCiAgICAgICAgICAgICAgICA8L1NlcnZpY2VDb25maWd1cmF0aW9uPg0KICAgICAgICAgICAg</Configuration>
+  <StartDeployment>true</StartDeployment>
+  <TreatWarningsAsError>false</TreatWarningsAsError>
+</CreateDeployment>
+
+<Error xmlns="http://schemas.microsoft.com/windowsazure" xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+  <Code>InvalidXmlRequest</Code>
+  <Message>The request body's XML was invalid or not correctly specified.</Message>
+</Error>

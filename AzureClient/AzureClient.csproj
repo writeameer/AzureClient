@@ -59,11 +59,13 @@
     <Compile Include="Models\UpgradeStatus.cs" />
     <Compile Include="ServiceManagementClientBase.cs" />
     <Compile Include="ServiceRequests\CreateAffinityGroupRequest.cs" />
+    <Compile Include="ServiceRequests\CreateDeploymentRequest.cs" />
     <Compile Include="ServiceRequests\CreateHostedServiceRequest.cs" />
     <Compile Include="ServiceManagementClient.cs" />
     <Compile Include="Models\HostedService.cs" />
     <Compile Include="Models\Location.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Utils\StringExtensions.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

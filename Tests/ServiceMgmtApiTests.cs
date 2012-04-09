@@ -6,6 +6,7 @@ using System.Security.Cryptography.X509Certificates;
 using AzureClient;
 using AzureClient.ServiceRequests;
 using NUnit.Framework;
+using AzureClient.Utils;
 
 namespace Tests
 {
@@ -119,6 +120,50 @@ namespace Tests
             {
                 Console.WriteLine(deployment.Name);
             }
+        }
+
+        [Test]
+        public void CreateDeployment()
+        {
+            var base64ConfigFile = @"<?xml version=""1.0"" encoding=""utf-8""?>
+                <ServiceConfiguration serviceName=""EmptyWorker"" xmlns=""http://schemas.microsoft.com/ServiceHosting/2008/10/ServiceConfiguration"" osFamily=""2"" osVersion=""*"">
+                  <Role name=""EmptyWorkerRole"">
+                    <Instances count=""1"" />
+                    <ConfigurationSettings>
+                      <Setting name=""Microsoft.WindowsAzure.Plugins.Diagnostics.ConnectionString"" value=""UseDevelopmentStorage=true"" />
+                      <Setting name=""Microsoft.WindowsAzure.Plugins.RemoteAccess.Enabled"" value=""true"" />
+                      <Setting name=""Microsoft.WindowsAzure.Plugins.RemoteAccess.AccountUsername"" value=""admin"" />
+                      <Setting name=""Microsoft.WindowsAzure.Plugins.RemoteAccess.AccountEncryptedPassword"" value=""MIIBnQYJKoZIhvcNAQcDoIIBjjCCAYoCAQAxggFOMIIBSgIBADAyMB4xHDAaBgNVBAMME1dpbmRvd3MgQXp1cmUgVG9vbHMCEHqfmBYoV4uxS2eIuf6f1uIwDQYJKoZIhvcNAQEBBQAEggEAN4HgeWCTgX8J+7PdzaYEDcN4a5occpX3ph7WsuxHAm0TosAb2Dx7rYy+KfkxBJbKAtjT39xB5Ik5PCndZWMw5WDIAGmjIU5y7w7oVulrH/jAgjlUxkuvNJWVVt3kq92PGvr8Buches8ca5lhksIhlo7UnneQ6N/LxjEDJuqoE+lxxWrDnEFiHABPgmeHMty2dsrXmi4N6cNMDRZZX+383YbLzLuWOFDasvwH/kz5IxgYQJEQsA5udmLPRSDrWKGqR/lwAGy0XyB4vsV76RoGiAD7w039pIIOoGW0PibDovBc567kUsXHYMvE5mRdEG2zp0XMpcQwUjsM2H0f7hrG0jAzBgkqhkiG9w0BBwEwFAYIKoZIhvcNAwcECGiZM1bE0hxTgBC6GGkWZe5xDg2dvBnPnGD3"" />
+                      <Setting name=""Microsoft.WindowsAzure.Plugins.RemoteAccess.AccountExpiration"" value=""2013-04-09T23:59:59.0000000+10:00"" />
+                      <Setting name=""Microsoft.WindowsAzure.Plugins.RemoteForwarder.Enabled"" value=""true"" />
+                    </ConfigurationSettings>
+                    <Certificates>
+                      <Certificate name=""Microsoft.WindowsAzure.Plugins.RemoteAccess.PasswordEncryption"" thumbprint=""B53E2ADE5F1626B33A79CC10D57AC5159B2F6374"" thumbprintAlgorithm=""sha1"" />
+                    </Certificates>
+                  </Role>
+                </ServiceConfiguration>
+            ".ToBase64();
+
+
+
+            var name = "AmeerDeploymentFromApi";
+            var xmlRequest = new CreateDeploymentRequest {
+                DeploymentName  = name,
+                PackageUrlInBlobStorage = "https://ameerdeen.blob.core.windows.net/public/EmptyWorker.cspkg",
+                Label = name,
+                Configuration   = base64ConfigFile,
+                StartDeployment = true,
+                TreatWarningsAsError = false
+            }.ToString();
+
+            var serviceName = "ameeristesting2";
+            var deploymentSlotName = "production";
+            var resourceName = "services/hostedservices/" + serviceName + "/deploymentslots/" + deploymentSlotName;
+
+            var response = _managementClient.ExecutePost(resourceName, xmlRequest);
+            Console.WriteLine(xmlRequest);
+            Console.WriteLine(response);
+
         }
     }
 }

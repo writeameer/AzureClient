@@ -62,12 +62,12 @@ namespace AzureClient
         public string ExecutePost(string resource, string xmlRequest)
         {
             // Create Web Request
-            var requestUri = _baseUrl + "services/hostedservices";
+            var requestUri = _baseUrl + resource;
             var request = (HttpWebRequest)WebRequest.Create(requestUri);
             request.Headers["x-ms-version"] = "2011-10-01";
             request.ContentType = "application/xml";
             request.Method = "POST";
-
+            Console.WriteLine(requestUri);
             // Add client cert to request
             request.ClientCertificates.Add(_clientCert);
 
