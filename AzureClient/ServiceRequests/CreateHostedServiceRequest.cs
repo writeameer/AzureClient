@@ -33,7 +33,7 @@ namespace AzureClient.ServiceRequests
               <Label>#label#</Label>
               <Description>#description#</Description>
               <Location>#location#</Location>
-              <AffinityGroup>#affinitygroup#</AffinityGroup>
+              <!-- <AffinityGroup>#affinitygroup#</AffinityGroup> -->
             </CreateHostedService>
             ";
             requestBody = requestBody.Replace("#servicename#", ServiceName);

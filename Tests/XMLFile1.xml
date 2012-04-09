@@ -1,12 +1,9 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<CreateAffinityGroup  xmlns="http://schemas.microsoft.com/windowsazure">
-  <Name>affinity-group-name</Name>
-  <Label>YWZmaW5pdHktZ3JvdXAtbmFtZQ==</Label>
-  <Description></Description>
-  <Location>Anywhere US</Location>
-</CreateAffinityGroup>
-
-<Error xmlns="http://schemas.microsoft.com/windowsazure" xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
-  <Code>InvalidXmlRequest</Code>
-  <Message>The request body's XML was invalid or not correctly specified.</Message>
-</Error>
+﻿<AffinityGroups xmlns="http://schemas.microsoft.com/windowsazure" xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+  <AffinityGroup>
+    <Name>aad4283b-921a-43e2-8566-5a3914396ba5</Name>
+    <Label>YW55d2hlcmUtc291dGhlYXN0LWFzaWE=</Label>
+    <Description/>
+    <Location>Southeast Asia</Location>
+  </AffinityGroup>
+</AffinityGroups>
+aad4283b-921a-43e2-8566-5a3914396ba5,

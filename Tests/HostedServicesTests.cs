@@ -70,10 +70,10 @@ namespace Tests
         public void CreateAffinityGroup()
         {
             var affinityGroupRequest = new CreateAffinityGroupRequest {
-                //Description = "affinity-group-name",
+                Description = "affinity-group-name",
                 Label = "affinity-group-name",
                 Name = "affinity-group-name",
-                Location = "Anywhere US"
+                Location = "Southeast Asia"
             }.ToString();
 
             Console.WriteLine(affinityGroupRequest);
@@ -88,11 +88,11 @@ namespace Tests
 
             var xmlRequest = new CreateHostedServiceRequest
             {
-                ServiceName = "ameeristesting",
-                Label = "base64-encoded-service-label",
+                ServiceName = "ameeristesting2",
+                Label = "ameeristesting2",
                 Description = "This is a test",
-                //AffinityGroup = "Anywhere",
-                Location = "Anywhere"
+                //AffinityGroup = "aad4283b-921a-43e2-8566-5a3914396ba5",
+                Location = "Southeast Asia"
             }.ToString();
 
             var response = _managementClient.ExecutePost("services/hostedservices", xmlRequest);
