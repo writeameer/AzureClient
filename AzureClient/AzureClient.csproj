@@ -50,9 +50,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="HostedServiceClientPost.cs" />
-    <Compile Include="HostedServicesClient.cs" />
+    <Compile Include="Models\AffinityGroup.cs" />
+    <Compile Include="ServiceRequests\CreateAffinityGroupRequest.cs" />
+    <Compile Include="ServiceRequests\CreateHostedServiceRequest.cs" />
+    <Compile Include="ServiceManagementClientPost.cs" />
+    <Compile Include="ServiceManagementClient.cs" />
     <Compile Include="Models\HostedService.cs" />
+    <Compile Include="Models\Location.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
