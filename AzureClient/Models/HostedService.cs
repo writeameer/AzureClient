@@ -7,5 +7,7 @@ namespace AzureClient.Models
     {
         public string Url { get; set; }
         public string ServiceName { get; set; }
+        public HostedServiceProperties HostedServiceProperties { get; set; }
+        public List<Deployment> Deployments { get; set; }
     }
 }

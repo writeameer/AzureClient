@@ -55,11 +55,20 @@ namespace AzureClient
             return ExecuteList<AffinityGroup>(request);
         }
 
+
+
         public Deployment GetDeployment(string serviceName, string deploymentSlot)
         {
             var resourceName = string.Format("/services/hostedservices/{0}/deploymentslots/{1}", serviceName, deploymentSlot);
             var request = new RestRequest { Resource = resourceName };
             return Execute<Deployment>(request);
+        }
+
+        public HostedService GetHostedServiceProperties(string serviceName, bool embedDetail=false)
+        {
+            var resourceName = string.Format("/services/hostedservices/{0}?embed-detail={1}", serviceName,embedDetail);
+            var request = new RestRequest { Resource = resourceName };
+            return Execute<HostedService>(request); 
         }
     }
 }

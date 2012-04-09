@@ -52,6 +52,7 @@
   <ItemGroup>
     <Compile Include="Models\AffinityGroup.cs" />
     <Compile Include="Models\Deployment.cs" />
+    <Compile Include="Models\HostedServiceProperties.cs" />
     <Compile Include="Models\InputEndpoint.cs" />
     <Compile Include="Models\RoleInstance.cs" />
     <Compile Include="Models\Role.cs" />

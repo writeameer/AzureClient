@@ -2,7 +2,6 @@
 using System.Collections.Specialized;
 using System.Configuration;
 using System.IO;
-using System.Security.Cryptography;
 using System.Security.Cryptography.X509Certificates;
 using AzureClient;
 using AzureClient.ServiceRequests;
@@ -11,14 +10,14 @@ using NUnit.Framework;
 namespace Tests
 {
     [TestFixture]
-    public class HostedServicesTests
+    public class ServiceMgmtApiTests
     {
         readonly NameValueCollection _appSettings = ConfigurationManager.AppSettings;
         private readonly string _subscriptionId;
         private readonly string _mgmtCert;
         private readonly ServiceManagementClient _managementClient;
 
-        public HostedServicesTests()
+        public ServiceMgmtApiTests()
         {
             // Setup stuff in constructor
             _subscriptionId = _appSettings["subscriptionid"];
@@ -108,6 +107,17 @@ namespace Tests
             foreach(var roleInstance in deployment.RoleList)
             {
                 Console.WriteLine(roleInstance.OsVersion + " " + roleInstance.RoleName);
+            }
+        }
+
+        [Test]
+        public void GetHostedServiceProperties()
+        {
+            var hostedService = _managementClient.GetHostedServiceProperties("cloudomanapi",true);
+            Console.WriteLine(hostedService.ServiceName);
+            foreach (var deployment in hostedService.Deployments)
+            {
+                Console.WriteLine(deployment.Name);
             }
         }
     }
