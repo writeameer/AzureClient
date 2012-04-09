@@ -32,7 +32,7 @@ namespace AzureClient.ServiceRequests
       <Label>#label#</Label>
       <Description>#description#</Description>
       <Location>#location#</Location>   
-      </CreateAffinityGroup>
+</CreateAffinityGroup>
             ";
             requestBody = requestBody.Replace("#name#", Name);
             requestBody = requestBody.Replace("#label#", Label);
