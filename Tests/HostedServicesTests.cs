@@ -97,8 +97,16 @@ namespace Tests
 
             var response = _managementClient.ExecutePost("services/hostedservices", xmlRequest);
             Console.WriteLine(response);
+        }
 
-
+        [Test]
+        public void ListDeployments()
+        {
+            var deployments = _managementClient.ListDeployments("cloudomanapi", "production");
+            foreach (var deployment in deployments)
+            {
+                Console.WriteLine(deployment.Name);
+            }
         }
     }
 }

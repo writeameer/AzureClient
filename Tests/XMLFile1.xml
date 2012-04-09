@@ -1,9 +1,47 @@
-﻿<AffinityGroups xmlns="http://schemas.microsoft.com/windowsazure" xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
-  <AffinityGroup>
-    <Name>aad4283b-921a-43e2-8566-5a3914396ba5</Name>
-    <Label>YW55d2hlcmUtc291dGhlYXN0LWFzaWE=</Label>
-    <Description/>
-    <Location>Southeast Asia</Location>
-  </AffinityGroup>
-</AffinityGroups>
-aad4283b-921a-43e2-8566-5a3914396ba5,
+﻿<Deployment xmlns="http://schemas.microsoft.com/windowsazure" xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+  <Name>7de2a3567b8f4c24bbe5cea0a9fa1764</Name>
+  <DeploymentSlot>Production</DeploymentSlot>
+  <PrivateID>98447317142d4b509d2e59f701b44e69</PrivateID>
+  <Status>Running</Status>
+  <Label>Q2xvdWRvbWFuLldlcEFwaS5BenVyZSAtIDQvMDEvMjAxMiAxMTowMjo0MyBQTQ==</Label>
+  <Url>http://cloudomanapi.cloudapp.net/</Url>
+  <Configuration>PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTE2Ij8+DQo8U2VydmljZUNvbmZpZ3VyYXRpb24geG1sbnM6eHNpPSJodHRwOi8vd3d3LnczLm9yZy8yMDAxL1hNTFNjaGVtYS1pbnN0YW5jZSIgeG1sbnM6eHNkPSJodHRwOi8vd3d3LnczLm9yZy8yMDAxL1hNTFNjaGVtYSIgc2VydmljZU5hbWU9IiIgb3NGYW1pbHk9IjIiIG9zVmVyc2lvbj0iKiIgeG1sbnM9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vU2VydmljZUhvc3RpbmcvMjAwOC8xMC9TZXJ2aWNlQ29uZmlndXJhdGlvbiI+DQogIDxSb2xlIG5hbWU9IkNsb3Vkb21hbi5XZXBBcGkiPg0KICAgIDxDb25maWd1cmF0aW9uU2V0dGluZ3M+DQogICAgICA8U2V0dGluZyBuYW1lPSJNaWNyb3NvZnQuV2luZG93c0F6dXJlLlBsdWdpbnMuRGlhZ25vc3RpY3MuQ29ubmVjdGlvblN0cmluZyIgdmFsdWU9IkRlZmF1bHRFbmRwb2ludHNQcm90b2NvbD1odHRwcztBY2NvdW50TmFtZT1hbWVlcmRlZW47QWNjb3VudEtleT1FUnVxdkt0OXp5ejBjOWlNb3REVUN3TnorL25ZUGRCdEZCWUFYTnV6WUhrY09uRTZSM053aXBvWUJ6bFlhWEEvbGRSK0Q4ck1sREdHeWtwS2pHZ1hjdz09IiAvPg0KICAgICAgPFNldHRpbmcgbmFtZT0iTWljcm9zb2Z0LldpbmRvd3NBenVyZS5QbHVnaW5zLlJlbW90ZUFjY2Vzcy5FbmFibGVkIiB2YWx1ZT0idHJ1ZSIgLz4NCiAgICAgIDxTZXR0aW5nIG5hbWU9Ik1pY3Jvc29mdC5XaW5kb3dzQXp1cmUuUGx1Z2lucy5SZW1vdGVBY2Nlc3MuQWNjb3VudFVzZXJuYW1lIiB2YWx1ZT0id3JpdGVhbWVlciIgLz4NCiAgICAgIDxTZXR0aW5nIG5hbWU9Ik1pY3Jvc29mdC5XaW5kb3dzQXp1cmUuUGx1Z2lucy5SZW1vdGVBY2Nlc3MuQWNjb3VudEVuY3J5cHRlZFBhc3N3b3JkIiB2YWx1ZT0iTUlJQm5RWUpLb1pJaHZjTkFRY0RvSUlCampDQ0FZb0NBUUF4Z2dGT01JSUJTZ0lCQURBeU1CNHhIREFhQmdOVkJBTU1FMWRwYm1SdmQzTWdRWHAxY21VZ1ZHOXZiSE1DRUdLcmZDNEhTNUs3Ui9Yb1phZkFuRHN3RFFZSktvWklodmNOQVFFQkJRQUVnZ0VBT2M1Qlg2b3l5V1FtdWVwNjZ5Q2kyS29XeHR1dzcyd1cvRk4ySGRvQjdhOUhLSHRwY1VHOVZjN0grVmN1RTZZbVczOEI0OVpBYUhFQkZ6NjdOUEJ3UEZEYWVBaGZGbGgzWmJ4SjBvZHd3cGFNKzcvMjExMkxLelJwdlhpMDBBN3Q2U0RIQ25LTTNXS0xuaDBrNFowdWVySkk3R0g2Q3U4K2lDbDhYM1p2U1R1R0dCTDNxaWtFNHBSOEFkaVdvWVlYaHN2K3JKQ1BmODcrbE04bGw0L0g2MHFQci9lMHZldkxjZGQ5a2hIa0lZNjNjcUZBWTNVMDNZdVpmL0pNaUdZYW1IQXlmVFJ3SXRENytERnNLcWN6RHF4WE51MmhEc3Rzb1hiamk5T0JuYTFsNlFVSzI3aFZmRDdlT0tkQXUxUC9VeTN5YmlNV1A0RmROSkp3dlVYcStEQXpCZ2txaGtpRzl3MEJCd0V3RkFZSUtvWklodmNOQXdjRUNJMkl3TGlXbndsTGdCQzlNUUhIQjN0bzZLcGdsM3RlOFE2NiIgLz4NCiAgICAgIDxTZXR0aW5nIG5hbWU9Ik1pY3Jvc29mdC5XaW5kb3dzQXp1cmUuUGx1Z2lucy5SZW1vdGVBY2Nlc3MuQWNjb3VudEV4cGlyYXRpb24iIHZhbHVlPSIyMDEyLTEyLTMwVDIzOjU5OjU5LjAwMDAwMDArMTE6MDAiIC8+DQogICAgICA8U2V0dGluZyBuYW1lPSJNaWNyb3NvZnQuV2luZG93c0F6dXJlLlBsdWdpbnMuUmVtb3RlRm9yd2FyZGVyLkVuYWJsZWQiIHZhbHVlPSJ0cnVlIiAvPg0KICAgIDwvQ29uZmlndXJhdGlvblNldHRpbmdzPg0KICAgIDxJbnN0YW5jZXMgY291bnQ9IjEiIC8+DQogICAgPENlcnRpZmljYXRlcz4NCiAgICAgIDxDZXJ0aWZpY2F0ZSBuYW1lPSJNaWNyb3NvZnQuV2luZG93c0F6dXJlLlBsdWdpbnMuUmVtb3RlQWNjZXNzLlBhc3N3b3JkRW5jcnlwdGlvbiIgdGh1bWJwcmludD0iQTM0NDNBOTNCMEM2RjgyMzRGMzQyNzAzMUJDQUIwRTAzM0FCNTMxRCIgdGh1bWJwcmludEFsZ29yaXRobT0ic2hhMSIgLz4NCiAgICA8L0NlcnRpZmljYXRlcz4NCiAgPC9Sb2xlPg0KPC9TZXJ2aWNlQ29uZmlndXJhdGlvbj4=</Configuration>
+  <RoleInstanceList>
+    <RoleInstance>
+      <RoleName>Cloudoman.WepApi</RoleName>
+      <InstanceName>Cloudoman.WepApi_IN_0</InstanceName>
+      <InstanceStatus>ReadyRole</InstanceStatus>
+      <InstanceUpgradeDomain>0</InstanceUpgradeDomain>
+      <InstanceFaultDomain>0</InstanceFaultDomain>
+      <InstanceSize>Small</InstanceSize>
+      <InstanceStateDetails/>
+    </RoleInstance>
+  </RoleInstanceList>
+  <UpgradeDomainCount>1</UpgradeDomainCount>
+  <RoleList>
+    <Role>
+      <RoleName>Cloudoman.WepApi</RoleName>
+      <OsVersion>WA-GUEST-OS-2.9_201112-03</OsVersion>
+    </Role>
+  </RoleList>
+  <SdkVersion>#1.6.21103.1459</SdkVersion>
+  <InputEndpointList>
+    <InputEndpoint>
+      <RoleName>Cloudoman.WepApi</RoleName>
+      <Vip>111.221.82.6</Vip>
+      <Port>80</Port>
+    </InputEndpoint>
+    <InputEndpoint>
+      <RoleName>Cloudoman.WepApi</RoleName>
+      <Vip>111.221.82.6</Vip>
+      <Port>3389</Port>
+    </InputEndpoint>
+    <InputEndpoint>
+      <RoleName>Cloudoman.WepApi</RoleName>
+      <Vip>111.221.82.6</Vip>
+      <Port>8172</Port>
+    </InputEndpoint>
+  </InputEndpointList>
+  <Locked>false</Locked>
+  <RollbackAllowed>false</RollbackAllowed>
+</Deployment>
