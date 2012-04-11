@@ -1,13 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ServiceDefinition name="EmptyWorker" xmlns="http://schemas.microsoft.com/ServiceHosting/2008/10/ServiceDefinition">
-  <WorkerRole name="EmptyWorkerRole" vmsize="Small">
+  <VirtualMachineRole  name="EmptyWorkerRole" vmsize="Small">
     <Imports>
-      <Import moduleName="Diagnostics" />
       <Import moduleName="RemoteAccess" />
       <Import moduleName="RemoteForwarder" />
+      <Import moduleName="Diagnostics" />
     </Imports>
     <Endpoints>
       <InputEndpoint name="Endpoint1" protocol="tcp" port="80" />
     </Endpoints>
-  </WorkerRole>
+  </VirtualMachineRole>
 </ServiceDefinition>
